@@ -58,17 +58,21 @@
       @keyframes slide {
         0% {
           margin-left: 100%;
-          transform: translateX(0%);
         }
         100% {
-          margin-left: 50%;
-          transform: translateX(-50%);
+          margin-left: 0%;
         }
       }
 
       @keyframes fade-in {
         100% {
           opacity: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 1100px) {
+        #lightbulb {
+          display: none;
         }
       }
     </style>
@@ -89,60 +93,40 @@
     </nav>
 
     <div class="jumbotron text-center parallax">
-      <h1 id="fade-in" style="animation-delay: 0.25s">Doc Survival Guide</h1>
-      <p id="fade-in" style="animation-delay: 1.25s">
-        Saving Your A's So That You Won't Have To.
-      </p>
-    </div>
-
-    <div class="container">
-      <blockquote
-        class="blockquote"
-        id="fade-in"
-        style="
-          background-color: rgba(0, 0, 0, 0.069);
-          border-left-color: rgba(0, 0, 0, 0.405);
-          animation-delay: 2.25s;
-        "
-      >
-        <p>
-          "Son, this is the great country of America. This is where Chinese food
-          was invented."
-        </p>
-        <footer><cite title="Steve He">Steven He</cite></footer>
-      </blockquote>
+      <h1 id="fade-in" style="animation-delay: 0.25s">Resource Submission</h1>
     </div>
 
     <div class="container-fluid" style="margin-bottom: 40px">
       <div class="row">
         <div
           class="col-lg-6"
-          id="fade-in"
           style="animation-delay: 2.25s; padding-bottom: 10px"
         >
-          <h1 class="page-header">Welcome!</h1>
-          <p style="font-size: 17pt">Our Mission:</p>
-          <p style="font-size: 15pt">
-            Founded on October 19, 2022, a day before Dr. Michael William's
-            first exam for his high school AP Literature class, the DSG or "Doc
-            Survival Guide," is a student-based project that hopes to create a
-            group study guide maintained by a community of AP Lit student
-            volunteers. Our goal is to make history as the first ever class to
-            have more than half of its students end the year with an A in Doc's
-            AP Lit class, and to set an example of what can be done when the
-            Damien brotherhood comes together in pursuit of a common goal.
-          </p>
+          <iframe
+            id="slide"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfGpMVGuB0BVUKcmiK_6cdSW40w9jUoJNBzWzZny-3E05F5mw/viewform?embedded=true"
+            width="100%"
+            height="830"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
         </div>
         <div
           class="col-lg-6 text-center"
           id="fade-in"
-          style="animation-delay: 2.25s"
+          style="animation-delay: 2s"
         >
           <img
-            src="docpic.jpg"
-            class="img-fluid rounded"
-            alt="picture of Dr. Michael Williams"
-            style="max-height: 450px; max-width: 50vw"
+            src="lightbulb.png"
+            alt="idea light bulb"
+            id="lightbulb"
+            style="
+              margin-top: 28%;
+              -webkit-filter: drop-shadow(0px 0px 20px #d8bb2a);
+              filter: drop-shadow(0px 0px 20px #d8bb2a);
+            "
           />
         </div>
       </div>
