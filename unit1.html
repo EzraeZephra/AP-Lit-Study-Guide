@@ -80,17 +80,14 @@
 
       #slide {
         animation: slide 2s forwards;
-        margin-left: 100%;
       }
 
       @keyframes slide {
         0% {
           margin-left: 100%;
-          transform: translateX(0%);
         }
         100% {
-          margin-left: 50%;
-          transform: translateX(-50%);
+          margin-left: 0%;
         }
       }
     </style>
@@ -114,7 +111,7 @@
       <h1 id="fade-in" style="animation-delay: 0.25s">Unit 1 Study Guide</h1>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="fade-in" style="animation-delay: 1s">
       <div class="card" style="margin-top: 30px">
         <div class="card-header" style="font-weight: bold">
           A Christmas Carol
